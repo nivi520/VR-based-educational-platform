@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VR Educational Platform</title>
+
+    <!-- Link to external stylesheets (you can add more CSS for design) -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- A-Frame library for VR -->
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+<body>
+
+    <!-- Main Header -->
+    <header>
+        <h1>Welcome to the Virtual Reality Educational Platform</h1>
+        <p>Experience immersive learning like never before</p>
+    </header>
+
+    <!-- Main Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#virtual-tour">Virtual Tour</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Our VR Platform</h2>
+        <p>Our platform provides immersive, interactive educational experiences. Explore different subjects in 3D, interact with objects, and enhance your learning.</p>
+    </section>
+
+    <!-- Virtual Reality Experience Section -->
+    <section id="virtual-tour">
+        <h2>Experience a Virtual Tour</h2>
+        <p>Step into a virtual classroom or explore historical landmarks.</p>
+        
+        <!-- A-Frame VR Scene -->
+        <a-scene>
+            <!-- Add a simple 3D object (can be replaced with a real educational scene later) -->
+            <a-box position="0 1.5 -5" color="#4CC3D9"></a-box>
+            <a-camera position="0 1.6 0"></a-camera>
+        </a-scene>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses">
+        <h2>Our Courses</h2>
+        <p>Browse through our collection of VR-based courses:</p>
+        <ul>
+            <li><a href="#">Science Lab Simulation</a></li>
+            <li><a href="#">Historical Journey: Ancient Egypt</a></li>
+            <li><a href="#">Space Exploration VR</a></li>
+            <li><a href="#">Virtual Anatomy Tour</a></li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need support, feel free to reach out:</p>
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 VR Educational Platform | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
+
